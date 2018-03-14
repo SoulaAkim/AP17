@@ -1,3 +1,4 @@
+<div class="form-group">
 <form action="#" method="post">
     <div>
         <label for="name">Nom : </label>
@@ -20,3 +21,4 @@
         <input type="submit" value="Envoyer" name="frmRegistration" />
     </div>
 </form>
+</div>
