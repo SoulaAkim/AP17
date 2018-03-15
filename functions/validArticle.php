@@ -1,4 +1,0 @@
-<?php
-function sendArticle($article) {
-
-}

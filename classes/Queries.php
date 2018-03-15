@@ -5,7 +5,7 @@ class Queries
     private $dsn = "mysql:dbname=ap;host=127.0.0.1;charset=utf8";
     private $user = "root";
     private $password = "root";
-    private $db;
+    public $db;
     function __construct()
     {
         try {
@@ -21,12 +21,15 @@ class Queries
         return $this -> db -> exec($sql);
     }
 
+
     function check ($sql) {
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll();
         return $result;
     }
+
+
 
     function __destruct()
     {
